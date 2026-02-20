@@ -49,9 +49,12 @@ tqdm
 scikit-learn
 
 Transformers
+```
 
+---
 
-Dataset Preparation
+## Dataset Preparation
+
 Melanoma Segmentation from Skin Images
 
 Download the ISIC dataset from:
@@ -81,10 +84,12 @@ data
 
 Ensure that images and corresponding masks are correctly matched.
 
-Training
+---
+
+## Training
 
 To train the guided diffusion segmentation model, run:
-
+```bash
 python scripts/segmentation_train.py \
 --data_name ISIC \
 --data_dir <input_data_directory> \
@@ -103,13 +108,16 @@ python scripts/segmentation_train.py \
 --rescale_timesteps False \
 --lr 1e-4 \
 --batch_size 8
+```
 
 Trained models will be saved in the specified output directory.
 
-Sampling (Inference)
+---
+
+## Sampling (Inference)
 
 To generate segmentation predictions:
-
+```bash
 python scripts/segmentation_sample.py \
 --data_name ISIC \
 --data_dir <input_data_directory> \
@@ -128,21 +136,27 @@ python scripts/segmentation_sample.py \
 --rescale_learned_sigmas False \
 --rescale_timesteps False \
 --num_ensemble 5
-
+```
 By default, generated samples are saved in:
-
+```bash
 ./results/
-Evaluation
+```
+
+---
+
+## Evaluation
 
 To evaluate predicted segmentation masks:
-
+```bash
 python scripts/segmentation_env.py \
 --inp_pth <prediction_folder> \
 --out_pth <ground_truth_folder>
-
+```
 This script computes Dice and Jaccard metrics.
 
-Reproducibility
+---
+
+## Reproducibility
 
 This repository provides:
 
@@ -156,13 +170,17 @@ Model configuration details
 
 All experiments reported in the manuscript can be reproduced using this code.
 
-Code and Data Archiving
+---
+
+## Code and Data Archiving
 
 An archived version of this repository will be released on Zenodo with a permanent DOI for long-term accessibility.
 
 The DOI will be added after publication.
 
-Related Publication
+
+--- 
+## Related Publication
 
 This code is directly related to the following manuscript submitted to The Visual Computer:
 
@@ -173,7 +191,7 @@ If you use this repository, please cite the corresponding paper.
 Citation
 
 If you use this code, please cite:
-
+```bash
 @article{GuidedDiffusion2026,
   title   = {Guided Diffusion with Spatial and Semantic Priors for Skin Lesion Segmentation},
   author  = {Author Names},
@@ -182,12 +200,14 @@ If you use this code, please cite:
 }
 
 (The final BibTeX entry will be updated after publication.)
+```
+---
 
-License
+## License
 
 This project is released under the MIT License.
 
-Contact
+## Contact
 
 For questions or issues, please open an issue on GitHub.
 
