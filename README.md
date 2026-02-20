@@ -177,7 +177,7 @@ Citation
 If you use this code, please cite:
 ```bash
 
-((The final BibTeX entry and Zenodo DOI will be updated upon acceptance.))
+(The final BibTeX entry and Zenodo DOI will be updated upon acceptance.)
 ```
 ---
 
