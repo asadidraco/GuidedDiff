@@ -31,6 +31,7 @@ Install the required dependencies using:
 
 ```bash
 pip install -r requirements.txt
+```
 
 Main dependencies include:
 
@@ -49,7 +50,7 @@ tqdm
 scikit-learn
 
 Transformers
-```
+
 
 ---
 
@@ -62,7 +63,7 @@ Download the ISIC dataset from:
 https://challenge.isic-archive.com/data/
 
 Your dataset directory should be organized as follows:
-
+```bash
 data
 └── ISIC
     ├── Test
@@ -81,7 +82,7 @@ data
         └── ISBI2016_ISIC_Part1_Training_GroundTruth
             ├── ISIC_0000000_Segmentation.png
             └── ...
-
+```
 Ensure that images and corresponding masks are correctly matched.
 
 ---
