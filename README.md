@@ -20,7 +20,7 @@ The proposed framework consists of three main components:
 3. A denoising diffusion probabilistic model for refined segmentation  
 
 <p align="center">
-  <img src="diffusion_arch.pdf" alt="Guided Diffusion Framework Architecture" width="800"/>
+  <img src="diffusion_arch.png" alt="Guided Diffusion Framework Architecture" width="800"/>
   <br>
   <em>Figure 1: Overview of the proposed guided diffusion framework with spatial and semantic priors.</em>
 </p>
