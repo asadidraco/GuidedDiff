@@ -19,8 +19,11 @@ The proposed framework consists of three main components:
 2. A CLIP-based textual encoder for semantic guidance  
 3. A denoising diffusion probabilistic model for refined segmentation  
 
-Please place the model figure in the `figures/` folder.
-
+<p align="center">
+  <img src="model_architecture.png" alt="Guided Diffusion Framework Architecture" width="800"/>
+  <br>
+  <em>Figure 1: Overview of the proposed guided diffusion framework with spatial and semantic priors.</em>
+</p>
 ---
 
 ## Requirements
