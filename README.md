@@ -1,8 +1,8 @@
-# Guided Diffusion with Spatial and Semantic Priors for Skin Lesion Segmentation
+# Guided Diffusion for Precise Skin Lesion Segmentation: Integrating Spatial and Semantic Priors
 
 This repository contains the official implementation of the manuscript:
 
-**"Guided Diffusion with Spatial and Semantic Priors for Skin Lesion Segmentation"**  
+**"Guided Diffusion for Precise Skin Lesion Segmentation: Integrating Spatial and Semantic Priors"**  
 Submitted to *The Visual Computer*.
 
 The proposed framework integrates pretrained U-Net-based spatial guidance and CLIP-based semantic guidance within a conditional denoising diffusion model for accurate skin lesion segmentation.
@@ -33,30 +33,9 @@ Install the required dependencies using:
 pip install -r requirements.txt
 ```
 
-Main dependencies include:
-
-PyTorch
-
-torchvision
-
-numpy
-
-pandas
-
-opencv-python
-
-tqdm
-
-scikit-learn
-
-Transformers
-
-
 ---
 
 ## Dataset Preparation
-
-Melanoma Segmentation from Skin Images
 
 Download the ISIC dataset from:
 
@@ -185,7 +164,7 @@ The DOI will be added after publication.
 
 This code is directly related to the following manuscript submitted to The Visual Computer:
 
-"Guided Diffusion with Spatial and Semantic Priors for Skin Lesion Segmentation"
+"Guided Diffusion for Precise Skin Lesion Segmentation: Integrating Spatial and Semantic Priors"
 
 If you use this repository, please cite the corresponding paper.
 
@@ -193,12 +172,6 @@ Citation
 
 If you use this code, please cite:
 ```bash
-@article{GuidedDiffusion2026,
-  title   = {Guided Diffusion with Spatial and Semantic Priors for Skin Lesion Segmentation},
-  author  = {Author Names},
-  journal = {The Visual Computer},
-  year    = {2026}
-}
 
 (The final BibTeX entry will be updated after publication.)
 ```
