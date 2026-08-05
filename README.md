@@ -222,13 +222,6 @@ python scripts/segmentation_env.py \
 --out_pth <ground_truth_folder>
 ```
 
-The evaluation script computes the following segmentation metrics:
-
-* Dice coefficient
-* Jaccard index
-
-Ensure that the predicted masks and ground-truth masks have matching image identifiers.
-
 ---
 
 ## Reproducibility
